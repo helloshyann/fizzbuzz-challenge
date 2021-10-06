@@ -71,17 +71,35 @@
     <!-- Page Content -->
     <section class="flex-shrink-0 py-5">
         <div class="container px-5 my-5">
+
             <div class="card text-center p-3">
                 <h1 class="fw-bolder animate__animated animate__bounceIn">Fizz Buzz</h1>
-                <p class="lead fw-normal text-muted mb-0">Text here</p>
+                <p class="lead fw-normal text-muted mb-0">
+                    Enter in two values between 1 and 100. 
+                    Multiples of your first value will generate "Fizz," 
+                    while multiples of your second value will generate "Buzz." 
+                    Numbers that are multiples of both of your values will pop up as "FizzBuzz"!
+                </p>
             </div>
+
             <hr>
-            <form>
-               <input id="fizz" type="number" value="3" placeholder="3" required>
-               <input id="buzz" type="number" value="5" placeholder="5" required>
-               <button id="btnSubmit" type="button" class="btn btn-lg hvr-pulse-grow">Fizzle</button>
-            </form>
+
+            <div class="d-flex justify-content-center gy-3">
+                <form class="row g-3">
+                    <div class="col">
+                        <input id="fizz" type="number" value="3" placeholder="3" required>
+                    </div>
+                    <div class="col">
+                        <input id="buzz" type="number" value="5" placeholder="5" required>
+                    </div>
+                    <div class="col">
+                        <button id="btnSubmit" type="button" class="btn hvr-pulse-grow">Fizzle</button>
+                    </div>
+                 </form>                
+            </div>
+
             <hr>
+
             <div class="table-responsive mb-5">
                <table class="table table-striped table-sm">
                    <tbody id="results">
