@@ -1,1 +1,1 @@
-# js-template
+# FizzBuzz Coding Challenge
