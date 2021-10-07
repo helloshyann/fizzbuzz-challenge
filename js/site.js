@@ -4,8 +4,8 @@ function fizzBuzz(){
     let buzz = 5;
 
     // Get numbers from the UI
-    fizz = document.getElementById("fizz").value;
-    buzz = document.getElementById("buzz").value;
+    fizz = document.getElementById("fizzInput").value;
+    buzz = document.getElementById("buzzInput").value;
 
     // Turn potential decimal numbers to whole numbers
     fizz = parseInt(fizz);
@@ -21,7 +21,14 @@ function fizzBuzz(){
         displayFizzBuzz(numbers)
 
     } else {
-        
+        Swal.fire({
+            title: "Uh oh!",
+            text: "You must enter two values to play FizzBuzz.",
+            icon: "error",
+            confirmButtonText: "OK",
+            confirmButtonColor: "#f95779",
+            showCloseButton:true,
+          });;
     }
 
 }
@@ -31,16 +38,16 @@ function fizzleNumbers(fizz, buzz){
 
     for (let i = 1; i <= 100; i++) {
         if (i % fizz == 0 && i % buzz == 0){
-            numbers.push(" FizzBuzz")
+            numbers.push("FizzBuzz")
         }
         else if (i % fizz == 0){
-            numbers.push(" Fizz")
+            numbers.push("Fizz")
         }
         else if (i % buzz == 0){
-            numbers.push(" Buzz")
+            numbers.push("Buzz")
         }
         else {
-            numbers.push(" " + i)
+            numbers.push(i)
         }
     }
     return numbers;
@@ -86,3 +93,4 @@ function displayFizzBuzz(numbers){
         
     }
 }
+

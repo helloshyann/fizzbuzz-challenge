@@ -91,6 +91,10 @@ footer .social>a:hover {
     background-color: var(--primary-color);
 }
 
+.swal-button--confirm:active {
+  background: #0a0;
+}
+
 .code-box {
     color: var(--white-color);
     background-color: var(--primary-color);
@@ -139,8 +143,17 @@ h3 {
     border-color: var(--dark-color);
 }
 
+
+
 .logo {
     max-height: 450px;
+}
+
+/* FIzzBuzz CSS */
+
+.tableScroll {
+  overflow: auto;
+  height: 500px;
 }
 
 .FizzBuzz {
