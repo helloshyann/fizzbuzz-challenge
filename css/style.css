@@ -161,6 +161,16 @@ h3 {
   font-weight: bolder;
 }
 
+.Fizz {
+  color: var(--dark-color);
+  font-weight: bold;
+}
+
+.Buzz {
+  color: var(--dark-color);
+  font-weight: bold;
+}
+
 /* Pulse Grow */
 @-webkit-keyframes hvr-pulse-grow {
   to {
