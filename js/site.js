@@ -27,6 +27,7 @@ function fizzBuzz(){
             icon: "error",
             confirmButtonText: "OK",
             confirmButtonColor: "#f95779",
+            focusConfirm: false,
             showCloseButton:true,
           });;
     }
